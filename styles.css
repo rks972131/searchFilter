@@ -1,0 +1,200 @@
+body{
+	padding: 0;
+	margin: 0;
+	font-family: "Open Sans",arial;
+	font-size: 16px;
+	color: #333;
+}
+a{
+	color: #5A0000;
+}
+h1, h2, h3, h4, h5, p,ul, li{
+	padding: 0;
+	margin: 0;
+}
+p,ul li, ol li{
+	line-height: 26px;
+}
+header, section, footer{
+	width: 100%;
+	clear: both;
+	margin: 20px 0;
+}
+section {
+    padding: 20px 0;
+}
+section.noshadow {
+	box-shadow: none;
+}
+section#download {
+    box-shadow: -3px 15px 16px #FFF4F7;
+}
+section#product {
+    background-color: #ededed;
+}
+section#support {
+    border-bottom: 1px solid #999;
+}
+header{
+    border-bottom: 3px solid #5A0000;
+    background-color: #efefef;
+    padding: 10px 0 0 0;
+    margin: 0;
+}
+footer{
+    border-top: 1px solid #5A0000;
+    background-color: #111;
+    margin: 0;
+    color: #fff;
+    font-size: 12px;
+}
+footer a:link, footer a:visited, footer a:active {
+	font-size: 12px;
+	color: #fff;
+	text-decoration: none;
+	display: block;
+}
+footer a:hover {
+	text-decoration: underline;
+}
+footer ul {
+	float: right;
+	width: auto;
+	margin: 10px 0 0;
+}
+footer ul li{
+	display: inline-block;
+	padding: 4px 30px;
+	float: left;
+	border-left: 1px solid #fff;
+	line-height: normal;
+}
+footer ul li:first-child{
+	border: none;
+}
+.copyright {
+    display: inline-block;
+    margin: 10px 0 30px;
+    float: left;
+}
+.clearall{
+	clear: both;
+}
+.hidden{
+	display: none;
+}
+.mainWrapper{
+	margin: 0 auto;
+	width: 80%;
+}
+.logo {
+    width: 20%;
+    float: left;
+}
+nav {
+    float: right;
+    width: auto;
+    margin-top: 80px;
+}
+nav ul li {
+    float: left;
+    display: inline-block;
+}
+nav ul li a:link, nav ul li a:visited, nav ul li a:active {
+	color: #5A0000;
+	font-weight: 700;
+	font-size: 16px;
+	padding: 23px 30px;
+	text-decoration: none;
+	display: block;
+}
+nav ul li a:hover {
+	color: #fff;
+	background-color: #5A0000;
+}
+.mainWrapper h2 {
+    font-size: 30px;
+    font-weight: 200;
+    margin: 10px 0 20px 5px;
+}
+.about, .registration, .contactForm, .socialicons {
+	width: 48%;
+	float: left;
+	font-size: 16px;
+	font-weight: 200;
+}
+.about, .contactForm {
+	margin: 10px 20px 10px 0;
+	width: 55%;
+}
+.registration {
+	width: 40%;
+}
+.about p{
+	margin: 0 0 20px 0;
+}
+.supportMode {
+	width: 31%;
+    float: left;
+    margin: 20px 0 20px 34px;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 0px 1px 18px #efefef;
+    border: 1px solid #efefef;
+}
+.supportMode:first-child {
+	margin-left: 0px;
+}
+.supportmg {
+    margin: 20px 0;
+}
+.supportText {
+    background-color: #5a0000;
+    color: #fff;
+    font-size: 16px;
+    padding: 20px;
+    height: 80px;
+    line-height: 22px;
+}
+.supportText a:link, .supportText a:active, .supportText a:visited, .supportText a:hover{
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 1px dotted #fff;
+}
+.downloadArea {
+    padding: 40px 0 30px;
+    text-align: center;
+}
+.mainWrapper input, .mainWrapper select, .mainWrapper textarea {
+    line-height: 33px;
+    clear: both;
+    display: block;
+    width: 90%;
+    border: 1px solid #ececec;
+    border-radius: 4px;
+    padding: 0px 0 0px 10px;
+    font-family: "Open Sans",arial;
+    font-size: 14px;
+    margin: 5px 0 0 0;
+    color: #787878;
+}
+.mainWrapper select{
+	padding: 7px 0 7px 10px;
+	width: 93%;
+}
+.table-row {
+    margin: 7px 0 0 0;
+}
+.terms{
+	font-size: 12px;
+}
+.terms input{
+	display: inline-block;
+	width: auto;
+	margin: 10px;
+}
+form label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+}

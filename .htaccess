@@ -1,0 +1,11 @@
+RewriteEngine on
+
+# Options +ExecCGI
+# AddType application/x-httpd-php .php .html
+# AddHandler x-httpd-php5 .php .html
+
+DirectoryIndex Presentation/bilServerUser.html
+
+AddType application/x-httpd-php .html .htm
+
+AddHandler application/x-httpd-php .html .htm 
