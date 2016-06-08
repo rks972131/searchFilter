@@ -103,8 +103,8 @@ nav ul li {
 nav ul li a:link, nav ul li a:visited, nav ul li a:active {
 	color: #5A0000;
 	font-weight: 700;
-	font-size: 16px;
-	padding: 23px 30px;
+	font-size: 14px;
+	padding: 20px 25px;
 	text-decoration: none;
 	display: block;
 }
@@ -178,6 +178,10 @@ nav ul li a:hover {
     margin: 5px 0 0 0;
     color: #787878;
 }
+.mainWrapper input[type='submit']{
+	width: auto;
+	padding: 2px 20px;
+}
 .mainWrapper select{
 	padding: 7px 0 7px 10px;
 	width: 93%;
@@ -198,3 +202,13 @@ form label {
     font-weight: bold;
     color: #666;
 }
+/*Login*/
+.login .leftContent{
+	float: left;
+	width: 40%;
+}
+.login .rightContent{
+	float: left;
+	width: 40%;
+}
+/*Login*/

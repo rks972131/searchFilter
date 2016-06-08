@@ -4,6 +4,9 @@ RewriteEngine on
 # AddType application/x-httpd-php .php .html
 # AddHandler x-httpd-php5 .php .html
 
+RewriteCond %{QUERY_STRING} ^(.*)$
+
+RewriteRule portal/(.*) Presentation/$1?%{QUERY_STRING}
 DirectoryIndex Presentation/bilServerUser.html
 
 AddType application/x-httpd-php .html .htm

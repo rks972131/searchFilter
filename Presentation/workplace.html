@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+<head>
+	<title>Bill Server Workplace:Login</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="../styles.css" rel="stylesheet" type="text/css" />
+	<script src="../RedPepper/js/jquery-1.9.0.min.js" type="text/javascript"></script>
+	<script src="../RedPepper/js/jquery.validate.js" type="text/javascript"></script>
+</head>
+<body class="login">
+	<?php
+
+	if(isset($_REQUEST['isSubmited'])){
+		switch($_REQUEST['frmAction']){
+			case "login":
+
+
+			break;
+			case "forgotpassword":
+
+			break;
+		}
+	}
+
+	?>
+	<header>
+		<div class="mainWrapper">
+			<div class="logo">
+				<a href=""><img src="../images/logo.png" alt="omd bill server Logo" border="0" /></a>
+			</div>
+			<div class="clearall"></div>
+		</div>
+	</header>	
+	<section id="product">
+		<div class="mainWrapper">
+			<h2>Login to Workplace</h2>
+			<div class="mainCntaint">				
+				<div class="LoginForm rightContent">
+				<form name="orgRegi" id="orgRegi" action="" method="post">
+					<div class="table">
+						<div class="table-row">
+							<label for="orgname">
+								User Name
+								<input type="text" name="orgname" id="orgname" placeholder="username" maxlength="120" autocomplete="off" />
+							</label>
+						</div>
+						<div class="table-row">
+							<label for="ownername">
+								Password
+								<input type="password" name="userpassword" id="userpassword" placeholder="password" maxlength="120" autocomplete="off" />
+							</label>
+						</div>
+						<div class="table-row">
+			<input type="submit" name="userLogin" id="userLogin" value="Login" />
+			<input type="hidden" name="isSubmited" id="isSubmited" value="<?php echo time(); ?>">
+			<input type="hidden" name="frmAction" id="frmAction" value="login" />
+									
+						</div>
+
+					</div>
+				</form>
+			</div>
+			<div class="leftContent">
+				<h3>Following are the features if you have an account with us.</h3>
+				<ol>
+					<li>online order management</li>
+					<li>dynamic report</li>
+					<li>multiple outlets</li>
+					<li>instant balance</li>
+					<li>stock management</li>
+					<li>profit and loss</li>
+				</ol>
+				and Many More .....
+			</div>
+
+			</div>
+			<div class="clearall"></div>
+		</div>
+	</section>
+	<footer>
+		<div class="mainWrapper">
+			<div class="copyright">&copy; Copy right reserved. OMD-Technologies</div>
+				<div class="clearall"></div>
+			</div>
+	</footer>
+</body>
+</html>
