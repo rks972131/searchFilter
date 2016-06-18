@@ -36,30 +36,70 @@
 			<h2>Login to Workplace</h2>
 			<div class="mainCntaint">				
 				<div class="LoginForm rightContent">
-				<form name="orgRegi" id="orgRegi" action="" method="post">
-					<div class="table">
-						<div class="table-row">
-							<label for="orgname">
-								User Name
-								<input type="text" name="orgname" id="orgname" placeholder="username" maxlength="120" autocomplete="off" />
-							</label>
-						</div>
-						<div class="table-row">
-							<label for="ownername">
-								Password
-								<input type="password" name="userpassword" id="userpassword" placeholder="password" maxlength="120" autocomplete="off" />
-							</label>
-						</div>
-						<div class="table-row">
-			<input type="submit" name="userLogin" id="userLogin" value="Login" />
-			<input type="hidden" name="isSubmited" id="isSubmited" value="<?php echo time(); ?>">
-			<input type="hidden" name="frmAction" id="frmAction" value="login" />
-									
-						</div>
+				<?php
 
+					$ch = (!empty($_REQUEST['msg']))?$_REQUEST['msg']:"";
+						switch($ch){
+							case "errorLogin":
+								?>
+								<div class="error">
+								<?php
+								echo "UserName or Password Are Wrong";
+								?></div><?php
+							break;
+							case "loginAgain":
+								?>							
+								<div class="error">
+								<?php
+								echo "Login Agaian with Valid User Cridentials(empty values are restricted)";
+								?></div><?php
+							break;	
+							case "logedOut":
+								?>							
+								<div class="message">
+								<?php
+								echo "Logged Out Successfuly";
+								?></div><?php
+							break;
+							case "noAccess":
+								?>							
+								<div class="error">
+								<?php
+								echo "You donot have access to this Page";
+								?></div><?php
+							break;
+						}
+				?>
+				<script type="text/javascript">
+					$(document).ready(function(){
+						setTimeout('timeout_trigger()', 5000);
+					});
+					function timeout_trigger(){
+						if($(".error,.message").length == 1){
+							$(".error,.message").fadeOut("5",function(){
+								//$(this).remove();
+							});
+						}
+							
+					}
+				</script>
+				<div class="maincontainer">
+				<form name="userlogin" id="userlogin" method="post" action="../bridges/userLogin/func_userLogin.php">
+					<div class="clear column-container columntitle">Username :</div>
+					<div class="column-container">
+								 <input type="text" name="username" id="username" value="abhi" />
+					</div>
+					<div class="clear column-container columntitle">Password :</div>
+					<div class="column-container">
+								 <input type="password" name="password" id="password" value="abhi123" />
+								<input type="hidden" name="formsubmit" id="formsubmit" value="1">
+					</div>
+					<div class="clear button-container">
+						<input type="submit" name="userlogin" id="userlogin" value="Login" class="login-button" /><input type="hidden" name="btn_submit" id="btn_submit" value="Submit">
 					</div>
 				</form>
-			</div>
+				</div>				
+				</div>
 			<div class="leftContent">
 				<h3>Following are the features if you have an account with us.</h3>
 				<ol>

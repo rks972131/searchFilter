@@ -1,5 +1,6 @@
 <?php
-require("applicationController.php");
+include("../include/config.php");
+require("class_applicationProcessor.php");
 	
 /*$cc = 'my secret text';
 $key = 'my secret key';
