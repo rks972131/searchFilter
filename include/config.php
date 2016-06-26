@@ -14,4 +14,9 @@ const TABLE_LICENCE_MASTER 				= "tbl_licence";
 const TABLE_BUSINESSTYPE_MASTER 		= "tbl_businesstypes";
 const TABLE_USER_MASTER					= "tbl_user_mst";
 
+const TABLE_ITEM_MASTER					= "item_master";
+const TABLE_CATEGORY_MASTER				= "tbl_category_mst";
+const TABLE_MANUFATURER_MASTER			= "tbl_manufacture_mst";
+
+
 ?>
